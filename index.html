@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Decodificador de Textos</title>
+</head>
+<body>
+    <main>     
+        <section class="principal">  
+            <section class="esquerda">
+                <div>
+                    <img class="logo" src="assets/cripto.png">  
+                </div>  
+    
+                <div class="textarea">
+                <textarea name="texto" id="input_texto"  placeholder="Digite aqui o seu texto" wrap="hard" required></textarea>
+                </div>
+    
+                <div class="aviso">
+                    <img src="assets/warning.png">
+                    <p>Apenas letras minúsculas e sem acento</p>
+                </div>
+    
+                <div class="botoes">
+                    <input type="button" onclick="criptografar()" value="Criptografar">
+                    <input type="button" onclick="descriptografar()" value="Descriptografar">
+                    <input type="button" onclick="limpar()" value="Limpar">
+                </div>
+            </section>
+            <section class="direita">
+                <div id="text_result">
+                    <img id="nada_encontrado" src="assets/nada_encontrado.png">
+                    <p>Nenhuma mensagem encontrada</p>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+            </section>
+        </section>
+        <footer>
+            <h4>Desenvolvido por Viviane Favato</h4>
+        </footer>
+    </main>    
+</body>
+</html>
